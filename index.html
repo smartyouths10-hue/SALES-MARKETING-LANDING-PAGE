@@ -123,6 +123,10 @@
                         <label for="status">目前职业 (Current Job / Status)</label>
                         <input type="text" id="status" name="status" required>
                     </div>
+                    <div class="form-group">
+                        <label for="location">居住区域 (Current Location)</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
                     <button type="submit" class="submit-btn">发送我的申请</button>
                 </form>
             </div>
@@ -140,10 +144,11 @@
             // Get form values
             const name = document.getElementById('name').value;
             const status = document.getElementById('status').value;
+            const location = document.getElementById('location').value;
 
             // WhatsApp details
             const phoneNumber = "60189694510";
-            const message = `你好 SMARTG，我想申请成为 Partner。\n姓名：${name}\n目前职业：${status}`;
+            const message = `你好 SMARTG，我想申请成为 Partner。\n姓名：${name}\n目前职业：${status}\n居住区域：${location}`;
 
             // Create WhatsApp URL
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
