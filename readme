@@ -1,0 +1,120 @@
+# 🏆 SMARTG Recruitment Landing Page Blueprint
+
+> **核心视觉定位：** 高级自然主义 | 橄榄绿色系 | 衬线体美学
+> **技术标准：** 移动端优先响应式设计 (Fully Responsive)
+
+---
+
+<style>
+  /* 全局样式定义 */
+  :root {
+    --bg-color: #F2F1EB;      /* 暖米底色 */
+    --primary-green: #4A5D4E; /* 橄榄绿（主色） */
+    --text-dark: #2C2C2C;     /* 深炭黑 */
+    --accent-brown: #8C7E6A;  /* 柔和棕 */
+    --white: #FFFFFF;
+  }
+
+  /* 基础容器 */
+  .full-landing { background-color: var(--bg-color); font-family: 'Inter', sans-serif; color: var(--text-dark); line-height: 1.6; }
+  .section { padding: 80px 20px; max-width: 1100px; margin: 0 auto; overflow: hidden; }
+  .serif { font-family: 'Playfair Display', serif; font-weight: 400; color: var(--primary-green); }
+  .italic-script { font-family: 'Playfair Display', serif; font-style: italic; color: var(--accent-brown); }
+
+  /* Section 1: Hero */
+  .hero-container { height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(242, 241, 235, 0.4), rgba(242, 241, 235, 0.4)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1500') center/cover; }
+  .cta-circle { width: 120px; height: 120px; background: var(--primary-green); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; margin-top: 30px; font-family: serif; box-shadow: 0 10px 20px rgba(74,93,78,0.2); }
+
+  /* Section 2: Vision (非对称) */
+  .vision-flex { display: flex; flex-direction: column; gap: 40px; }
+  .vision-image { width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1000&auto=format&fit=crop') center/cover; }
+
+  /* Section 3: Pillars (网格) */
+  .pillar-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+  .pillar-item { border-top: 1px solid var(--primary-green); padding-top: 20px; }
+
+  /* Section 5: Benefits (圆角卡片) */
+  .benefit-card { background: #E3E2D8; padding: 30px; border-radius: 20px; margin-bottom: 20px; }
+
+  /* 响应式断点 - 电脑端布局 */
+  @media (min-width: 768px) {
+    .section { padding: 120px 10%; }
+    .hero-container h1 { font-size: 4rem; }
+    .vision-flex { flex-direction: row; align-items: center; }
+    .vision-image { width: 45%; height: 600px; }
+    .vision-text { width: 55%; padding-left: 60px; }
+    .pillar-grid { grid-template-columns: repeat(3, 1fr); gap: 50px; }
+    .benefit-group { display: flex; flex-direction: column; align-items: flex-end; }
+  }
+</style>
+
+<div class="full-landing">
+
+  <div class="hero-container">
+    <p class="italic-script">Career Awakening 2026</p>
+    <h1 class="serif" style="font-size: 2.5rem; margin: 20px 0;">重新定义你的职业赛道</h1>
+    <p>不仅仅是一份工作，而是一场职业觉醒</p>
+    <a href="#form" class="cta-circle">开启<br>预约</a>
+  </div>
+
+  <div class="section vision-flex">
+    <div class="vision-image"></div>
+    <div class="vision-text">
+      <h2 class="serif" style="font-size: 2.2rem;">告别平庸，<br><span class="italic-script">选择一种“向上”的人生</span></h2>
+      <p style="margin-top:25px;">在马来西亚瞬息万变的市场，你需要的不是一份底薪，而是一套成熟的成交系统和资源杠杆。我们打破了传统保险业的刻板印象，用美学定义金融。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="serif" style="text-align:center; margin-bottom:60px;">核心赋能 Pillars</h2>
+    <div class="pillar-grid">
+      <div class="pillar-item">
+        <h3>01. 系统化培训</h3>
+        <p>从零经验到行业精英的系统化陪跑，让专业成为你的护城河。</p>
+      </div>
+      <div class="pillar-item">
+        <h3>02. 高净值客群赋能</h3>
+        <p>数字化驱动，精准触达优质客群，不再依赖传统的扫街和“求人”模式。</p>
+      </div>
+      <div class="pillar-item">
+        <h3>03. 个人品牌 IP</h3>
+        <p>专属团队协助你打造社交媒体影响力，让客户主动寻找你的专业服务。</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="width:100%; height:500px; background: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1500&auto=format&fit=crop') center/cover fixed;">
+    <div style="width:100%; height:100%; background:rgba(0,0,0,0.2); display:flex; align-items:center; justify-content:center;">
+       <h2 class="serif" style="color:white; font-size:2.5rem; text-align:center;">这里的文化：<br>自由、透明、互助</h2>
+    </div>
+  </div>
+
+  <div class="section benefit-group">
+    <h2 class="serif" style="margin-bottom:40px;">为什么选择 SMARTG</h2>
+    <div class="benefit-card">
+      <h3>🏆 无限被动收入</h3>
+      <p>建立你的个人管理体系，享受多维度的管理分红，实现真正的财务自由。</p>
+    </div>
+    <div class="benefit-card">
+      <h3>✈️ 全球激励奖励</h3>
+      <p>每年定期 2-3 次高端海外商务考察与旅行，在世界舞台拓展你的视野。</p>
+    </div>
+    <div class="benefit-card">
+      <h3>📱 数字化工具支持</h3>
+      <p>独家内部 CRM 系统，帮你高效管理客户关系，科技助力业绩翻倍。</p>
+    </div>
+  </div>
+
+  <div id="form" class="section" style="text-align:center; background:#EAE9E1;">
+    <h2 class="serif">寻找下一位“合伙人”</h2>
+    <p class="italic-script" style="margin: 20px 0;">如果你对 Sales & Marketing 有热诚，我们期待与你面谈。</p>
+    <div style="max-width:500px; margin: 0 auto; text-align:left;">
+       <p style="margin-bottom:10px;">姓名 (Name)</p>
+       <div style="width:100%; height:45px; border-bottom:1px solid #4A5D4E; margin-bottom:30px;"></div>
+       <p style="margin-bottom:10px;">联系电话 (Contact Number)</p>
+       <div style="width:100%; height:45px; border-bottom:1px solid #4A5D4E; margin-bottom:40px;"></div>
+       <button style="width:100%; background:var(--primary-green); color:white; padding:15px; border:none; border-radius:50px; font-weight:bold; cursor:pointer;">立即提交申请</button>
+    </div>
+  </div>
+
+</div>
